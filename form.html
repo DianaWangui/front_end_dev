@@ -4,34 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      form {
-        padding: 10px;
-        margin-top: 20px;
-        margin: 10px 0;
-        border-radius: 15px;
-      }
-      input[type="text"] {
-        padding: 10px;
-        margin: 10px;
-        border-radius: 15px;
-      }
-      input[type="password"] {
-        padding: 10px;
-        margin: 10px;
-        border-radius: 15px;
-      }
-      textarea {
-        width: 100px;
-        padding: 10px;
-        border-radius: 15px;
-      }
-    </style>
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="form.css" />
     <h1>This is a form</h1>
+  </head>
+  <body span style="background-color: rgb(219, 211, 211)">
     <form action="submit.php" method="post">
-      <label for="name">Name:</label>
+      <label for="name">Name:</label> <br />
       <input
         type="text"
         id="name"
@@ -41,7 +19,7 @@
       />
       <br />
 
-      <label for="email">Email:</label>
+      <label for="email">Email:</label> <br />
       <input
         type="text"
         id="email"
@@ -51,18 +29,19 @@
       />
       <br />
 
-      <label for="password">Password:</label>
+      <label for="password">Password:</label> <br />
       <input
         type="password"
         id="password"
         name="password"
         minlength="5"
         maxlength="30"
-        placeholder="1!Name£"
+        placeholder="********"
         required
       />
       <br />
-      <label for="message">Message:</label>
+
+      <label for="message">Message:</label> <br />
       <textarea id="message" name="message" placeholder="Comment..."></textarea>
       <br />
       <input type="submit" value="submit" />
